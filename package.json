@@ -1,0 +1,47 @@
+{
+  "name": "finance-fe",
+  "version": "0.0.1",
+  "description": "a proyect to test stock market api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "npm run lint:ts && npm run lint:css",
+    "lint:ts": "eslint 'pages/**/*.{ts,tsx}'",
+    "lint:css": "sass-lint 'pages/**/*.scss' -v -q"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanignaciogn/node-finance-fe.git"
+  },
+  "author": "juanignaciogn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanignaciogn/node-finance-fe/issues"
+  },
+  "homepage": "https://github.com/juanignaciogn/node-finance-fe#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.9.1",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.2",
+    "next": "^9.2.1",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "@types/react": "^16.9.19",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.2",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "sass-lint": "^1.13.1",
+    "typescript": "^3.7.5"
+  }
+}

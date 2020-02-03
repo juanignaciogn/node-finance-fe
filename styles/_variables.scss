@@ -1,0 +1,26 @@
+/* colors */
+$black: #000;
+$gray-100: rgba($black, 0.1);
+$gray-300: rgba($black, 0.3);
+$gray-600: rgba($black, 0.6);
+$gray-900: rgba($black, 0.9);
+
+$blue-400: #3483fa !default; // primary blue
+$blue-500: #2968c8 !default; // secondary blue
+$blue-600: #1f4e96 !default; // tertiary blue
+
+$bg-primary: $gray-100;
+
+/* tipography */
+$font-family-primary: Arial, Helvetica, sans-serif;
+$font-size-base: 16px;
+$line-height-xs: 1;
+$line-height-s: 1.25;
+$line-height-base: 1.35;
+$line-height-m: 1.45;
+
+
+/* links */
+$link-state-link: $blue-400;
+$link-state-hover: $blue-500;
+$link-state-active: $blue-600;

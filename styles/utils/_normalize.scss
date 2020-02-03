@@ -1,0 +1,81 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $bg-primary;
+}
+
+main[role='main'] { // sass-lint:disable-line no-qualifying-elements
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: 300;
+  line-height: $line-height-base;
+  // Propietary webkit rule: avoid font resizing on device rotation
+  -webkit-text-size-adjust: 100%;
+  // Propietary webkit rule: standarize cross device tap highlight color
+  -webkit-tap-highlight-color: $gray-100;
+}
+
+::selection {
+  background: $gray-100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
+  line-height: $line-height-s;
+}
+
+p {
+  margin: 0;
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+a {
+  color: $link-state-link;
+  transition: color 0.2s ease-in-out;
+}
+
+a:focus {
+  color: $link-state-hover;
+}
+
+a:hover {
+  color: $link-state-hover;
+  cursor: pointer;
+}
+
+a:active {
+  color: $link-state-active;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+textarea {
+  font-family: inherit;
+}
